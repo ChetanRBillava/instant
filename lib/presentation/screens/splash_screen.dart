@@ -40,6 +40,7 @@ class _SplashScreenState extends State<SplashScreen> {
                     AppImages.logo
                 ),
                 AppTexts(
+                  fontFamily: 'gh',
                   textString: Strings.appTitle,
                   textFontSize: 24.sp,
                   textAlign: TextAlign.center,

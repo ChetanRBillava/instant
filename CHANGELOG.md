@@ -23,6 +23,16 @@ Here we write the updates of future releases.
 ### Security
 
 
+## [1.0.2] - 18-12-2022
+
+### Added
+- Loading gif in assets
+- home tile widget
+
+### Changed
+- app build name in app/build.gradle file
+
+
 ## [1.0.1] - 18-12-2022
 
 ### Added
