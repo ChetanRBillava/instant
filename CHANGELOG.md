@@ -23,6 +23,46 @@ Here we write the updates of future releases.
 ### Security
 
 
+## [1.0.4] - 19-12-2022
+
+### Added
+- Bottom navigation bar
+
+
+## [1.0.3] - 19-12-2022
+
+### Added
+- Stories tile in home screen
+
+
+## [1.0.2] - 18-12-2022
+
+### Added
+- Loading gif in assets
+- home tile widget
+
+### Changed
+- app build name in app/build.gradle file
+
+
+## [1.0.1] - 18-12-2022
+
+### Added
+- constants folder
+- route exception file
+- app theme file
+- cubit set for app theme
+- app router file
+- splash screen
+- home screen
+- utils folder
+- app bar widget
+- sizer, flutter bloc, equatable and google fonts plugin
+
+### Changed
+- app logo
+
+
 ## [1.0.0] - 16-12-2022
 
 ### Added
