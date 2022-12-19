@@ -9,6 +9,7 @@ import 'package:sizer/sizer.dart';
 import '../../core/constants/strings.dart';
 import '../../logic/cubit/app_theme_cubit.dart';
 import '../utils/app_texts.dart';
+import '../widgets/bottom_bar_widget.dart';
 import '../widgets/home_tile.dart';
 import '../widgets/my_story_tile.dart';
 import '../widgets/random_stories_tile.dart';
@@ -48,9 +49,10 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ],
             ),
+            bottomNavigationBar: const BottomBarWidget(),
             body: SingleChildScrollView(
               child: ListView.builder(
-                  itemCount: 6,
+                  itemCount: 10,
                   shrinkWrap: true,
                   physics: const NeverScrollableScrollPhysics(),
                   itemBuilder: (context, i){
@@ -87,3 +89,5 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 }
+
+

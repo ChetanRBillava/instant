@@ -23,6 +23,12 @@ Here we write the updates of future releases.
 ### Security
 
 
+## [1.0.4] - 19-12-2022
+
+### Added
+- Bottom navigation bar
+
+
 ## [1.0.3] - 19-12-2022
 
 ### Added
