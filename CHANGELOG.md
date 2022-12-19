@@ -23,6 +23,12 @@ Here we write the updates of future releases.
 ### Security
 
 
+## [1.0.3] - 19-12-2022
+
+### Added
+- Stories tile in home screen
+
+
 ## [1.0.2] - 18-12-2022
 
 ### Added

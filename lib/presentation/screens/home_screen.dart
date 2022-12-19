@@ -10,6 +10,8 @@ import '../../core/constants/strings.dart';
 import '../../logic/cubit/app_theme_cubit.dart';
 import '../utils/app_texts.dart';
 import '../widgets/home_tile.dart';
+import '../widgets/my_story_tile.dart';
+import '../widgets/random_stories_tile.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -19,10 +21,6 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  List img = [
-    'https://picsum.photos/${100.w.round()}/${67.w.round()}',
-    'https://picsum.photos/${100.w.round()}/${67.w.round()}'
-  ];
 
   @override
   Widget build(BuildContext context) {
@@ -50,11 +48,38 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ],
             ),
-            body: ListView.builder(
-                itemCount: 6,
-                itemBuilder: (context, i){
-                  return const HomeTile();
-                }
+            body: SingleChildScrollView(
+              child: ListView.builder(
+                  itemCount: 6,
+                  shrinkWrap: true,
+                  physics: const NeverScrollableScrollPhysics(),
+                  itemBuilder: (context, i){
+                    if(i==0){
+                      return
+                        SizedBox(
+                          width: 80.w,
+                          height: 22.w,
+                          child: ListView.builder(
+                              itemCount: 10,
+                              scrollDirection: Axis.horizontal,
+                              itemBuilder: (context, j){
+                                if(j==0){
+                                  ///my story
+                                  return const MyStoryTile();
+                                }
+                                else{
+                                  ///random stories
+                                  return const RandomStoriesTile();
+                                }
+                              }
+                          ),
+                        );
+                    }
+                    else{
+                      return const HomeTile();
+                    }
+                  }
+              ),
             ),
           ),
         );

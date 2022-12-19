@@ -37,7 +37,7 @@ class _AppBarWidgetState extends State<AppBarWidget> {
     return BlocBuilder<AppThemeCubit, AppThemeState>(
       builder: (context, appThemeState) {
         return AppBar(
-          elevation: 1,
+          elevation: 0,
           iconTheme: IconThemeData(
             color: (appThemeState as AppThemeSet).themeClass.textColor_1, // <-- SEE HERE
           ),
